@@ -4,9 +4,20 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "dev": "vite --open --port 3000",
+    "build": "vite build",
+    "lint": "npx eslint ./src",
+    "lintFix": "eslint --fix ./src",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "vite": "^4.4.9"
+  },
+  "devDependencies": {
+    "@trybe/eslint-config-frontend": "^1.11.4",
+    "eslint": "^8.49.0"
+  }
 }
